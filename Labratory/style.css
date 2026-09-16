@@ -1,0 +1,119 @@
+:root {
+    --primary: #0d5c3e;
+    --secondary: #1a936f;
+    --background: #f0f7f4;
+    --text: #1a2e24;
+    --accent: #f3a712;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: var(--background);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: #08452f !important;
+}
+
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 14px;
+}
+
+.login-card .card-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.music-logo {
+    display: grid;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 10px;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--primary);
+    background: white;
+    font-size: 32px;
+}
+
+.sidebar {
+    min-height: calc(100vh - 56px);
+    background: white;
+    border-right: 1px solid #dce8e2;
+}
+
+.sidebar .nav-link {
+    color: var(--text);
+    border-radius: 6px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: white;
+    background: var(--secondary);
+}
+
+.stat-card {
+    border: 0;
+    border-left: 5px solid var(--secondary);
+    transition: 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #0002;
+}
+
+.stat-card h2 {
+    color: var(--primary);
+}
+
+.border-primary-custom {
+    border-left-color: var(--primary) !important;
+}
+
+.border-success-custom {
+    border-left-color: #198754 !important;
+}
+
+.border-info-custom {
+    border-left-color: #0dcaf0 !important;
+}
+
+.border-warning-custom {
+    border-left-color: var(--accent) !important;
+}
+
+footer {
+    color: white;
+    background: var(--primary);
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid #dce8e2;
+    }
+}
+
